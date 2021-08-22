@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Gradient Generator</title>
+</head>
+<body>
+    
+    <main>
+        <button id="gradient-button">
+            Generate Gradient
+        </button>
+        <input 
+            id="bg-img-value" 
+            type="text" 
+            value="background-image: linear-gradient(rgba(10,246,191,1), rgba(5,212,252,1));" 
+            readonly
+            onclick="this.style.width = ((this.value.length + 2) * 8) + 'px';"
+        >
+        <button id="copy-clip">Copy to Clipboard</button>
+    </main>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
